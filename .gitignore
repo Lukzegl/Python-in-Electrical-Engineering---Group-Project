@@ -14,10 +14,10 @@ env/
 # =========================
 # Ignorujemy wszystko w folderach z danymi, oprócz plików .gitkeep (żeby Git zachował puste foldery)
 
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
+# data/raw/*
+# !data/raw/.gitkeep
+# data/processed/*
+# !data/processed/.gitkeep
 
 # Ogólnie ignorujemy duże pliki z danymi
 # *.csv
