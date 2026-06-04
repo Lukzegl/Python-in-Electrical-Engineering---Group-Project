@@ -4,10 +4,11 @@ __pycache__/
 *$py.class
 *.so
 
-# venv/
+venv/
 env/
 .env/
 .venv/
+pyvenv.cfg
 
 # =========================
 # Dane (Data)
