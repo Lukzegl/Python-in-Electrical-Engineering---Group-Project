@@ -25,6 +25,7 @@ def train_model(model, train_loader, device, epochs, lr, save_path):
             
         avg_loss = total_loss / len(train_loader)
         print(f'Epoka [{epoch+1}/{epochs}] | Strata Treningowa (MSE): {avg_loss:.4f}')
+        
 
     # Zapis wag po skończeniu uczenia
     torch.save(model.state_dict(), save_path)

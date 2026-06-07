@@ -1,7 +1,7 @@
 import torch.nn as nn
 
 class GRUForecaster(nn.Module):
-    def __init__(self, input_dim=7, hidden_dim=64, output_dim=24, num_layers=2): # [64,24] wymiary
+    def __init__(self, input_dim=7, hidden_dim=128, output_dim=24, num_layers=2): # [64,24] wymiary
         super(GRUForecaster, self).__init__()
         
         # Warstwa GRU (batch_first=True oznacza, że tensor ma kształt [batch, seq, feature])

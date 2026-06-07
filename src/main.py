@@ -1,4 +1,6 @@
 import torch
+import matplotlib
+matplotlib.use('Agg')  # Ustawienie backendu dla matplotlib, aby działał bez GUI
 import matplotlib.pyplot as plt
 
 # moduły
