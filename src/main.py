@@ -7,6 +7,8 @@ from src.data.dataset import get_dataloaders
 from src.models.gru_model import GRUForecaster
 from src.training.trainer import train_model
 from src.utils.plots import evaluate_and_plot
+from src.utils.prediction import run_custom_prediction
+
 
 if __name__ == "__main__":
     print("--- ETDataset Time-Series Project ---")
@@ -39,3 +41,4 @@ if __name__ == "__main__":
     
     # Ocena i Wykresy
     evaluate_and_plot(model, test_loader, config.DEVICE)
+    run_custom_prediction(model, scaler, config.SEQ_LEN, config.DEVICE)
